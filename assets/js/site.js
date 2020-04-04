@@ -48,6 +48,21 @@ function updateServerStatus(lastEntry) {
             }
 
             newStatus += playerDifference + ')</span>';
+
+
+            let players24 = "---";
+            if (displayedGraphData != null) {
+                const lastDayTimestamp = Date.now() - 86400000;
+                const diff = 30000;
+                for (list of displayedGraphData[lastEntry.info.name]) {
+                    const time = list[0];
+                    if (time <= (lastDayTimestamp + diff) && time >= (lastDayTimestamp - diff)) {
+                        players24 = list[1];
+                        break;
+                    }
+                }
+            }
+            newStatus += '<div style="font-weight: 300;font-size: 0.9rem">Yesterday: <span style="font-weight: 500;">' + players24 + '</span></div>';
         }
 
         lastPlayerEntries[info.name] = result.players.online;
