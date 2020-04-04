@@ -1,12 +1,57 @@
 [
 	{
-		"name": "Hypixel",
-		"ip": "mc.hypixel.net",
-		"type": "PC"
+		"name": "SurvivalGames",
+		"ip": "play.survival-games.cz",
+		"type": "PC",
+		"category": "minigames"
 	},
 	{
-		"name": "HiveMC",
-		"ip": "play.hivemc.com",
-		"type": "PC"
+		"name": "QPlay",
+		"ip": "mc.qplay.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "GameTeam",
+		"ip": "play.gameteam.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "Trenend",
+		"ip": "mc.trenend.eu",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "KastrolCraft",
+		"ip": "mc.kastrolcraft.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "CraftMania",
+		"ip": "mc.craftmania.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "BasicLand",
+		"ip": "mc.basicland.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "MiniCraft",
+		"ip": "play.minicraft.cz",
+		"type": "PC",
+		"category": "minigames"
+	},
+	{
+		"name": "Za-Play",
+		"ip": "play.za-play.cz",
+		"type": "PC",
+		"category": "minigames"
 	}
+
 ]

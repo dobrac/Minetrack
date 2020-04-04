@@ -8,19 +8,22 @@
 		"/css/main.css": "assets/css/main.css"
 	},
 	"faviconOverride": {
+
 	},
 	"site": {
-		"port": 8080,
+		"port": 8088,
 		"ip": "0.0.0.0"
 	},
 	"rates": {
 		"upateMojangStatus": 5000,
 		"mojangStatusTimeout": 3500,
-		"pingAll": 3000,
-		"connectTimeout": 2500
+		"pingAll": 4000,
+		"connectTimeout": 3000
 	},
-	"logToDatabase": false,
-	"graphDuration": 86400000,
+	"logToDatabase": true,
+	"graphDuration": 172800000,
+	"serverCategories": {
+	},
 	"versions": {
 		"PC": [
 			4,
@@ -38,5 +41,6 @@
 			0
 		]
 	},
+	"categoriesVisible": true,
 	"serverTypesVisible": true
 }
