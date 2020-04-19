@@ -122,12 +122,14 @@ function convertGraphData(rawData) {
 
         let lastRecord = null
         for (const record of dat) {
+            const toLastRecord = [record[0], record[1]]
             if (lastRecord) {
                 if (Math.abs(lastRecord[1] - record[1]) > 500) {
+                    console.warn("Skipping value:", record[1])
                     record[1] = 0
                 }
             } 
-            lastRecord = record            
+            lastRecord = toLastRecord            
         }
 
         data.push({
