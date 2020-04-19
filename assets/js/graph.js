@@ -120,20 +120,22 @@ function convertGraphData(rawData) {
     for (var i = 0; i < keys.length; i++) { 
         const dat = rawData[keys[i]]
 
+        let dataToDisplay = []
         let lastRecord = null
         for (const record of dat) {
-            const toLastRecord = [record[0], record[1]]
             if (lastRecord) {
                 if (Math.abs(lastRecord[1] - record[1]) > 500) {
-                    console.warn("Skipping value:", record[1])
-                    record[1] = 0
+                    console.log("Skipping value:", record[1])
+                    dataToDisplay.push([record[0], 0])
+                } else {
+                    dataToDisplay.push(record)
                 }
             } 
-            lastRecord = toLastRecord            
+            lastRecord = record            
         }
 
         data.push({
-            data: dat,
+            data: dataToDisplay,
             yaxis: 1,
             label: keys[i],
             color: getServerColor(keys[i])
