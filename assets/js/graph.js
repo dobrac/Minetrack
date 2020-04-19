@@ -117,9 +117,21 @@ function convertGraphData(rawData) {
 
     var keys = Object.keys(rawData);
 
-    for (var i = 0; i < keys.length; i++) {    
+    for (var i = 0; i < keys.length; i++) { 
+        const dat = rawData[keys[i]]
+
+        let lastRecord = null
+        for (const record of dat) {
+            if (lastRecord) {
+                if (Math.abs(lastRecord[1] - record[1]) > 500) {
+                    record[1] = 0
+                }
+            } 
+            lastRecord = record            
+        }
+
         data.push({
-            data: rawData[keys[i]],
+            data: dat,
             yaxis: 1,
             label: keys[i],
             color: getServerColor(keys[i])
