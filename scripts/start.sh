@@ -1,5 +1,5 @@
 while true;
 do
-        node main.js 
+        node app.js 
         sleep 5
 done

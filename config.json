@@ -1,15 +1,42 @@
 {
+	"routes": {
+		"/": "assets/html/index.html",
+		"/images/compass.png": "assets/images/compass.png",
+		"/js/site.js": "assets/js/site.js",
+		"/js/util.js": "assets/js/util.js",
+		"/js/graph.js": "assets/js/graph.js",
+		"/css/main.css": "assets/css/main.css"
+	},
+	"faviconOverride": {
+	},
 	"site": {
 		"port": 8080,
 		"ip": "0.0.0.0"
 	},
 	"rates": {
-		"updateMojangStatus": 5000,
+		"upateMojangStatus": 5000,
 		"mojangStatusTimeout": 3500,
 		"pingAll": 3000,
 		"connectTimeout": 2500
 	},
 	"logToDatabase": false,
 	"graphDuration": 86400000,
-	"serverGraphDuration": 180000
+	"versions": {
+		"PC": [
+			4,
+			5,
+			47,
+			107,
+			210,
+			315,
+			335,
+			393,
+			477,
+			575
+		],
+		"PE": [
+			0
+		]
+	},
+	"serverTypesVisible": true
 }
